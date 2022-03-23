@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nicaza | Nika Qisty Fatharani | UTS | Konstruksi Perangkat Lunak </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/stylesheet.css">
+
+    <!-- BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito&family=Open+Sans&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="icon" href="aset/icon2.png">
+</head>
+
+<!-- START BODY -->
+<body style="background-color: #222831;">
+    <header>
+        <!-- ===== Start Nav Bar ===== -->
+        <nav>
+            <div class="logo">
+                <a href="#home"><img src="aset/icon2.png" alt="Logo"></a>
+            </div>
+
+            <ul>
+                <li><a href="#home"> <b>Home</b> </a></li>
+                <li><a href="#employee-month"> <b>Employee</b> </a></li>
+                <li><a href="#calculate"> <b>Calculate</b> </a></li>
+                <li><a href="#article"> <b>Article</b> </a></li>
+                <li><a href="#contact"> <b>Contact</b> </a></li>
+            </ul>
+        </nav>
+        <!-- ===== End Navbar ===== -->
+
+        <script src="script/script.js"></script>
+
+    </header>
+
+    <!-- ===== Start Main ===== -->
+    <main>
+        <!-- ===== Start Home ===== -->
+        <div id="home">
+            <div class="wrap-home">
+                <div class="company-name">
+                    <h1 class="title-company-name"> <b>Nicaza Company</b> </h1>
+                </div>
+                <div class="company-desc">
+                    <h4>Nicaza merupakan perusahaan yang bergerak di bidang teknologi khususnya web developer, 
+                        laman ini merupakan portal informasi bagi pegawai di perusahaan Nicaza untuk mendapatkan 
+                        informasi mengenai pegawai terbaik setiap bulannya dan untuk mengkalkulasikan gaji yang akan didapat.</h4>
+                </div>
+            </div>
+        </div>
+        <!-- ===== End Home ===== -->
+
+        <!-- ===== Start Employee of the month ===== -->
+        <div id="employee-month">
+            <h2> <b>Employee of The Month</b> </h2>
+            <div class="wrap-employee">
+                <div class="the-employee">
+                    <img src="aset/org1.jpg" alt="">
+                    <h3> <b>Devanca</b> </h3>
+                    <p>as Software Engineer</p>
+                </div>
+                <div class="the-employee">
+                    <img src="aset/org2.jpg" alt="">
+                    <h3> <b>Zenreva</b> </h3>
+                    <p>as UI Designer</p>
+                </div>
+                <div class="the-employee">
+                    <img src="aset/org3.jpg" alt="">
+                    <h3> <b>Ferzio</b> </h3>
+                    <p>as Database Administrator</p>
+                </div>
+            </div>
+        </div>
+        <!-- ===== End Employee of the month ===== -->
+
+        <!-- ===== Start Hitung Gaji ===== -->
+        <div id="calculate">
+            <h2> <b>Calculate your Salary!</b> </h2>
+            <div class="calculate-wrap">
+                <div class="calculate-icon">
+                    <img src="aset/salary.jpg" alt="salary">
+                </div>
+                <div class="calculate-salary">
+                    <h4>Inputkan data berikut</h4>
+                    <table border="0" >
+                        <tr>
+                            <td><label>NIK<span class="star">*</span></label></td>
+                            <td> : </td>
+                            <td><input type="text" id="NIK" name="NIK" placeholder="327*************" required ></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Nama<span class="star">*</span></label></td>
+                            <td> : </td>
+                            <td><input type="text" id="nama" name="nama" placeholder="inputkan nama Anda" required ></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Jenis Kelamin<span class="star">*</span></label></td>
+                            <td> : </td>
+                            <td>
+                                <select name="jns_klmn" id="jns_klmn" required>
+                                    <option>Laki-Laki</option>
+                                    <option>Perempuan</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Golongan<span class="star">*</span></label></td>
+                            <td> : </td>
+                            <td>
+                                <select name="golongan" id="golongan" required>
+                                    <option value="Golongan I">Golongan I</option>
+                                    <option value="Golongan II">Golongan II</option>
+                                    <option value="Golongan III">Golongan III</option>
+                                    <option value="Golongan IV">Golongan IV</option>
+                                    <option value="Golongan V">Golongan V</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Status<span class="star">*</span></label></td>
+                            <td> : </td>
+                            <td>
+                                <select name="status" id="status" required>
+                                    <option>Belum Kawin</option>
+                                    <option>Kawin</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tanggungan<span class="star">*</span></td>
+                            <td> : </td>
+                            <td><input type="text" id="tanggungan" name="tanggungan" placeholder="0" required ></td>
+                        </tr>
+
+                        <tr>
+                            <td>Cicilan Bank (Rp)<span class="star">*</span></td>
+                            <td> : </td>
+                            <td><input type="text" id="potongan" name="potongan" placeholder="1000000" required ></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3">
+                                <p class="star-paragraph"><span class="star">*</span>Required</p>
+                                <button id="hasil" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" onclick="total()"><b>Calculate Now</b></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- ===== End Hitung Gaji ===== -->
+
+        <!-- Modal -->
+        
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header" style="background-color: #FFB800;">
+                  <h3 class="modal-title"> <b>DATA PEGAWAI</b> </h3> 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    
+                    <table border="0">
+                        <tr>
+                            <td>Nama</td>
+                            <td> : </td>
+                            <td><span id="get_nama_pegawai"></td>
+                        </tr>
+                        <tr>
+                            <td> NIK </td>
+                            <td> : </td>
+                            <td> <span id="get_NIK"> </td>
+                        </tr>
+                        <tr>
+                            <td> Jenis Kelamin </td>
+                            <td> : </td>
+                            <td> <span id="get_jns_klmn"> </td>
+                        </tr>
+                        <tr>
+                            <td>Golongan Gaji</td>
+                            <td> : </td>
+                            <td> <span id="get_golongan"> </td>
+                        </tr>
+                        <tr>
+                            <td>Gaji Pokok</td>
+                            <td> : </td>
+                            <td> Rp <span id="get_gaji_pokok"> </td>
+                        </tr>
+                        <tr>
+                            <td> Status </td>
+                            <td> : </td>
+                            <td> <span id="get_status"> </td>
+                        </tr>
+                        <tr>
+                            <td> Tanggungan </td>
+                            <td> : </td>
+                            <td> <span id="get_tanggungan"></span> </td>
+                        </tr>
+                        <tr>
+                            <td> Tunjangan </td>
+                            <td> : </td>
+                            <td> Rp <span id="get_tunjangan"></span> </td>
+                        </tr>
+                        <tr>
+                            <td> Potongan </td>
+                            <td> : </td>
+                            <td> Rp <span id="get_potongan"></span> </td>
+                        </tr>
+                        <tr>
+                            <td> <b>Total Gaji</b> </td>
+                            <td> <b> : </b> </td>
+                            <td> <b> Rp <span id="get_total_gaji"></span> </b> </td>
+                        </tr>
+
+                    </table>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+        <!-- ===== Start Article ===== -->
+        <div id="article">
+            <h2> <b> Article of The Week</b></h2>
+            <div class="article-wrap">
+                <div class="article-content">
+                    <h3>Berixena has completed his first project</h3>
+                    <p>Even though he started with excessive anxiety, he finally succeed..... <span class="read-more"> Read More</span></p>
+                </div>
+
+                <div class="article-content">
+                    <h3>JS or TS?</h3>
+                    <p>JavaScript or TypeScript, is an option that is often chosen by programmers..... <span class="read-more"> Read More</span></p>
+                </div>
+
+                <div class="article-content">
+                    <h3>How to be a Good Programmer?</h3>
+                    <p>Programmer is a person who creates computer software..... <span class="read-more"> Read More</span></p>
+                </div>
+
+                <div class="article-content">
+                    <h3>Ramadhan is Coming!!</h3>
+                    <p>Are you ready for coding until the sun rises?..... <span class="read-more"> Read More</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- ===== End Article ===== -->
+
+        <!-- ===== Start Contact ===== -->
+        <div id="contact">
+            <h2> <b>Contact Us!</b> </h2>
+            <!-- start contact wrap utama -->
+            <div class="contact-wrap">
+                <!-- start contact wrap 1 -->
+                <div class="contact-wrap1">
+                    <div class="contact-profile">
+                        <div class="contact-profile-nicaza">
+                            <img src="aset/icon2.png" alt="">
+                            <h4> <b>Nicaza Company</b> </h4>
+                            <p>Web Developer Company</p>
+                        </div>
+                    
+                        <div class="contact-profile-nika">
+                            <img src="aset/nikaa.jpg" alt="">
+                            <h4> <b>Nika Qisty Fatharani</b> </h4>
+                            <p>as CEO at Nicaza Company</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end contact wrap 1 -->
+
+                <!-- start contact wrap2 -->
+                <div class="contact-wrap2">
+                    <div class="contact-wrap2-list">
+                        <div class="contact-list">
+                            <img src="aset/linkedin.png" alt="linkedin">
+                        </div>
+                        <div class="contact-list">
+                            <img src="aset/email.png" alt="email">
+                        </div>
+                        <div class="contact-list">
+                            <img src="aset/instagram.png" alt="instagram">
+                        </div>
+                    </div>
+                    <div class="contact-wrap2-list">
+                        <div class="contact-list">
+                            <img src="aset/linkedin.png" alt="linkedin">
+                        </div>
+                        <div class="contact-list">
+                            <img src="aset/email.png" alt="email">
+                        </div>
+                        <div class="contact-list">
+                            <img src="aset/instagram.png" alt="instagram">
+                        </div>
+                    </div>
+                
+                </div> 
+                <!-- end contact wrap2 -->
+            </div>
+            <!-- end contact wrap utama -->
+        </div>
+        <!-- ===== End Contact ===== -->
+    </main>
+    <!-- ===== End Main ===== -->
+
+    <!-- ===== Start Footer ===== -->
+    <footer>
+        <h2> <img src="aset/icon2.png" alt="logo"> Nicaza Company</h2>
+        <p id="copyright">&#169; Copyright 2022 Nicaza. All right reserved</p>
+    </footer>
+    <!-- ===== End Footer ===== -->
+
+</body>
+<!-- END BODY -->
+
+</html>

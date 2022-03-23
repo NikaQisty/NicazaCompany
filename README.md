@@ -12,6 +12,6 @@ dari data yang telah diinputkan. Adapun fitur menu yang dimiliki web ini diantar
 4. Article
 5. Contact
 
- Nika Qisty Fatharani | 2000662
+ Nika Qisty Fatharani | 2000662 |
  Rekayasa Perangkat Lunak | 4B
 

@@ -75,7 +75,7 @@ nav ul li a:hover {
     height: 750px;
     border: none;
     margin: 0 auto;
-    background-image: linear-gradient(rgb(48, 56, 65, 0.7),rgb(48, 56, 65, 0.7)),url(../aset/bg0.jpg);
+    background-image: linear-gradient(rgb(48, 56, 65, 0.7),rgb(48, 56, 65, 0.7)),url(../img/bg0.jpg);
     background-size: cover;
     background-position: center;
     justify-content: center;
